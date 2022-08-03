@@ -1,0 +1,24 @@
+To force push to github // git push -u origin +main
+
+Commands related to a remote repository // 
+git clone git@github.com:USER-NAME/REPOSITORY-NAME.git 
+git push origin main (Both accomplish the same goal in this context)
+git push . (pushes local repository to github after a commit)
+git pull . (pulls any reacent commits from github to the local repository)
+
+Commands related to the workflow //
+git add . (adds everything in the current directory to be added to the staged queue)
+git commit -m "A message describing what you have done to make this snapshot different"
+
+Commands related to checking status or log history //
+git status (looks to see if there is modified or staged files)
+git log (shows a log of commits made to the repository)
+
+The basic Git syntax is // 
+program | action | destination.
+
+For example,
+
+git add . (is read as git | add | ., where the period represents everything in the current directory)
+git commit -m "message" (is read as git | commit -m | "message")
+git status (is read as git | status | (no destination).)
